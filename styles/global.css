@@ -21,7 +21,7 @@
   --shape-stroke: #002347;
   --shape-hover: #001933;
   --shape-base: #000F1F;
-  --hape-background: shape-background;
+  --shape-background: #00050A;
   /* Text */
   --text-title: #F8FBFB;
   --text-body: #E2E7E9;              
@@ -45,3 +45,13 @@
   --Link: 500 14px var(--ff-base);
   --Tag: 700 10px var(--ff-base);
 } 
+
+body {
+  background-color: var(--shape-background);
+}
+
+
+h1 {
+  font: var(--Title-lg);
+  color: var(--text-title);
+}
