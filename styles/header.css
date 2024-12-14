@@ -18,6 +18,10 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 56px auto 164px auto;
+    background-image: url(../assets/icons/logo-horizontal.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
 
     & > button {
       background-color: var(--pink-dark);
@@ -60,6 +64,40 @@ header {
         color: var(--text-body);
         margin-bottom: 470px;
         max-width: 568px;
+      }
+    }
+  }
+}
+
+/* section.gallery - mobile { */
+@media (width < 80em) {
+  header {
+    background-image: url(../assets/hero-background-mobile.png);
+    background-size: cover;
+    background-position: top;
+
+    & nav {
+      /* border: solid yellow; */
+
+      max-width: 375px;
+      background-image: url(../assets/icons/logo-symbol.svg);
+      margin-bottom: 48px;
+      margin-inline: 20px;
+      margin-top: 20px;
+    }
+
+    & .container {
+      /* border: solid pink; */
+      height: 484px;
+      
+      & h1 {
+        font-size: 28px;
+        width: 335px;
+      }
+
+      & p {
+        /* border: solid yellow; */
+        margin-inline: 20px;  
       }
     }
   }
