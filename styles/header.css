@@ -69,7 +69,7 @@ header {
   }
 }
 
-/* section.gallery - mobile { */
+/* header - mobile { */
 @media (width < 80em) {
   header {
     background-image: url(../assets/hero-background-mobile.png);
