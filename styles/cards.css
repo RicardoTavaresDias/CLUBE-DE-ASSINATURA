@@ -1,0 +1,54 @@
+
+section.cartas {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  & h2 {
+    font: var(--Title-sm);
+    color: var(--text-title);
+    justify-self: center;
+    width: 294px;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  & .cards {
+    border: solid red;
+    width: 100%;
+    align-self: center;
+  }
+
+  & .container-card {
+    border: solid blue;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-block: 83px 107px;
+  }
+
+  /* fazer o geral font-family, cores etc, depois com card-1 etc, sera definidos as posicoes e hover */
+  & .card {
+    border: solid white;
+
+    & h3 {}
+
+    & strong{}
+
+    & span:nth-child(3){
+      color: red;
+    }
+
+    & figure {
+      & img {}
+      & figcaption {}
+    }
+
+    & button {
+    }
+  }
+}
