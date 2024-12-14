@@ -1,0 +1,137 @@
+
+.hero-3 {
+  /* border: solid yellow; */
+  margin-bottom: 66px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .container-hero-3 {
+    /* border: solid red; */
+    margin-top: 235px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+
+    & div {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      
+      & img {
+        width: 32px;
+      }
+
+      & h3 {
+        font: var(--Title-sm);
+        color: var(--text-title);
+      }
+    }
+    
+    & p {
+      font: var(--Body-md);
+      color: var(--text-body);
+    }
+  }
+}
+
+
+.livro {
+  /* border: solid blue; */
+  max-width: 1280px;
+  margin-block: 134px 447px;
+
+  
+  & .livro-castelo {
+    padding-block: 134px 169px;
+    position: relative;
+
+    & img[src*="book"] {
+      width: 467px;
+      height: 617px;
+      position: static;
+      z-index: 1;
+    }
+
+    & img[src*="yellow"] {
+      width: 172px;
+      height: 536px;
+      position: absolute;
+      top: 55px;
+      right: -120px;
+      transform: rotate(12deg);
+      z-index: -1;
+    }
+
+    & img[src*="purple"] {
+      width: 172px;
+      height: 536px;
+      position: absolute;
+      top: 150px;
+      right: -223px;
+      transform: rotate(22deg);
+      z-index: -2;
+    }
+
+    & img[src*="pin"] {
+      width: 222px;
+      height: 254px;
+      position: absolute;
+      bottom: 100px;
+      left: -135px;
+      transform: rotate(-8deg);
+      z-index: -3;
+    }
+
+    & div:nth-child(5){
+      /* border: solid green; */
+
+      width: 100%;
+      position: absolute;
+      top: 63px;
+      left: -220px;
+    }
+
+    & div:nth-child(6){
+      /* border: solid green; */
+
+      width: 100%;
+      position: absolute;
+      bottom: 310px;
+      left: -200px;
+    }
+
+    & div:nth-child(7){
+      /* border: solid green; */
+
+      width: 100%;
+      position: absolute;
+      bottom: 70px;
+      left: 390px;
+    }
+
+    div {
+      & p {
+        font: var(--Body-md);
+        color: var(--text-title);
+      }
+
+      & img[src*="seta"] {
+        margin-left: 80px;
+        margin-top: 23.5px;
+      }
+
+      & img[src*="seta-curva"] {
+        margin-left: 15px;   
+      }
+
+      & img[src*="seta-reta"] {
+        margin-bottom: 17.5px;   
+      }
+    }
+  }
+}
