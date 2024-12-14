@@ -35,11 +35,22 @@
   
   }
 
-  & img[src*="spellbook"] {
-    width: 88px; 
+  & .mystery {
     align-self: center;
-    transform: rotate(20deg);
+    width: 88px;
+    height: 88px;
+
+    & img[src*="spellbook"] {
+      width: 80px; 
+      align-self: center;
+      transform: rotate(20deg);   
+      
+      &:hover {
+        width: 88px;
+      }
+    }
   }
+
 
   & img[src*="planchette"] {
     width: 80px;

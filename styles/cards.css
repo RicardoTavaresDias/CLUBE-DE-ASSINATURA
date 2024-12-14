@@ -5,7 +5,6 @@ section.cartas {
   flex-direction: column;
   align-items: center;
 
-
   & h2 {
     font: var(--Title-sm);
     color: var(--text-title);
@@ -16,39 +15,189 @@ section.cartas {
   }
 
   & .cards {
-    border: solid red;
-    width: 100%;
+    /* border: solid red; */
+    width: 1280px;
+    padding-block: 83px 107px;
     align-self: center;
   }
 
   & .container-card {
-    border: solid blue;
-    max-width: 1280px;
+    /* border: solid blue; */
+    width: fit-content;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding-block: 83px 107px;
+    
+    position: relative;
   }
 
   /* fazer o geral font-family, cores etc, depois com card-1 etc, sera definidos as posicoes e hover */
   & .card {
-    border: solid white;
+    border: 1px solid var(--shape-stroke);
+    background-color: var(--shape-base);
+    border-radius: 24px;
+    width: 288px;
+    padding: 32px 32px 28px 32px;
+    display: flex;
+    flex-direction: column;
 
-    & h3 {}
+    & h3 {
+      font: var(--Title-xs);
+      color: var(--blue-light);
+      margin-bottom: 24px;
+    }
 
-    & strong{}
+    & strong{
+      font: var(--Title-lg);
+      color: var(--text-title); 
+      
+      &::after {
+        content: "/mês";
+        font-size: 14px;
+      }
+    }
 
     & span:nth-child(3){
-      color: red;
+      font: var(--Body-sm);
+      color: var(--text-label);
+      margin-block: 8px 70px;
+       
     }
 
     & figure {
-      & img {}
-      & figcaption {}
+      display: flex;
+      gap: 5px;
+      margin-bottom: 12px;
+
+      & img {
+        width: 14px;
+      }
+      & figcaption {
+        font: var(--Body-xs);
+        color: var(--text-body);
+      }
     }
 
     & button {
+      font: var(--Button);
+      color: var(--text-body);
+      background-color: var(--blue-dark);
+      width: 224px;
+      height: 40px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 12px;
+
+      &:hover {
+        background-color: var(--blue-mid);
+      }
+    }
+  }
+
+  & .estrela-1 {
+    position: absolute;
+    top: 22%;
+    left: -8%;
+    transform: rotate(95deg);
+  }
+
+  & .estrela-2 {
+    position: absolute;
+    bottom: -8%;
+    right: -1%;
+    transform: rotate(160deg);
+  }
+
+  & .tamanho-img {
+    & img:nth-child(1) {
+      width: 26px;
+      margin-right: 8px;
+    }
+
+    & img:nth-child(2) {
+      width: 13px;
+    }
+  }
+
+  & .card-1 {
+    position: static;
+    margin-top: 130px;
+    left: 173px;
+    transform: rotate(-8deg);
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+
+    & span:nth-child(3) {
+      margin-bottom: 90px;
+    }
+  }
+
+
+  & .card-2 {
+    padding-right: 18px;
+    position: relative;
+    z-index: 3;
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+  
+    
+    & > div:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      & h3 {
+        color: var(--pink-light);
+      }
+
+      & span:nth-child(2) {
+        font: var(--Body-xs);
+        color: var(--text-body);
+        width: 90px;
+        height: 30px;
+        background-color: var(--shape-stroke);
+        border-radius: 999px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+    }
+    
+    & button {
+      background-color: var(--pink-dark);
+
+      &:hover {
+        background-color: var(--pink-base);
+      }
+    }
+  }
+
+  & img[src*="coelho"] {
+    position: absolute;
+    top: 2%;
+    left: 36%;
+  }
+
+  & .card-3 {
+    position: static;
+    margin-top: 110px;
+    transform: rotate(8deg);
+    z-index: 2;
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+
+    & span:nth-child(3) {
+      margin-bottom: 40px;
     }
   }
 }
