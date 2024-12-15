@@ -15,16 +15,19 @@ section.cartas {
   }
 
   & .cards {
-    /* border: solid red; */
-    width: 1280px;
+    border: solid red;
+
+    max-width: 1280px;
+    width: 100%;
     padding-block: 83px 107px;
     align-self: center;
   }
 
   & .container-card {
     /* border: solid blue; */
+
     width: fit-content;
-    height: fit-content;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +36,7 @@ section.cartas {
     position: relative;
   }
 
-  /* fazer o geral font-family, cores etc, depois com card-1 etc, sera definidos as posicoes e hover */
+  
   & .card {
     border: 1px solid var(--shape-stroke);
     background-color: var(--shape-base);
@@ -52,6 +55,10 @@ section.cartas {
     & strong{
       font: var(--Title-lg);
       color: var(--text-title); 
+
+      & span {
+        margin-left: 8px;
+      }
       
       &::after {
         content: "/mês";
@@ -96,108 +103,243 @@ section.cartas {
     }
   }
 
-  & .estrela-1 {
-    position: absolute;
-    top: 22%;
-    left: -8%;
-    transform: rotate(95deg);
-  }
+ 
+  
+/* CARD 1 */
 
-  & .estrela-2 {
-    position: absolute;
-    bottom: -8%;
-    right: -1%;
-    transform: rotate(160deg);
-  }
-
-  & .tamanho-img {
-    & img:nth-child(1) {
-      width: 26px;
-      margin-right: 8px;
-    }
-
-    & img:nth-child(2) {
-      width: 13px;
-    }
-  }
-
-  & .card-1 {
-    position: static;
-    margin-top: 130px;
-    left: 173px;
-    transform: rotate(-8deg);
-
-    &:hover {
-      background-color: var(--shape-hover);
-    }
-
-    & span:nth-child(3) {
-      margin-bottom: 90px;
-    }
-  }
-
-
-  & .card-2 {
-    padding-right: 18px;
+  & .card-1-cont {
+    /* border: solid yellow; */
     position: relative;
-    z-index: 3;
+    z-index: 1;
+    /* margin-top: 110px; */
+    animation: sliddUp-card-1 1s ease forwards;
 
-    &:hover {
-      background-color: var(--shape-hover);
+    transform: translateX(289px) rotate(8deg);
+    
+    & .card-1 {
+      transform: rotate(-8deg);
+      transition: 0.5s;
+      opacity: 0;
+      animation: aparece 1s ease forwards;
+
+      & span:nth-child(3) {
+        margin-bottom: 90px;
+      }
+    }
+
+
+    & .estrela-1 {
+      /* border: solid pink; */
+      
+      display: inline-block;
+      transform: rotate(110deg);
+      position: absolute;
+      left: -25%;
     }
   
-    
-    & > div:nth-child(1) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      
-      & h3 {
-        color: var(--pink-light);
+    & .tamanho-img {
+      & img:nth-child(1) {
+        width: 26px;
+        margin-right: 8px;
+        transition: 0.5s;
       }
-
-      & span:nth-child(2) {
-        font: var(--Body-xs);
-        color: var(--text-body);
-        width: 90px;
-        height: 30px;
-        background-color: var(--shape-stroke);
-        border-radius: 999px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-transform: uppercase;
-        margin-bottom: 20px;
+  
+      & img:nth-child(2) {
+        width: 13px;
+        transition: 0.5s;
       }
     }
-    
-    & button {
-      background-color: var(--pink-dark);
-
-      &:hover {
-        background-color: var(--pink-base);
-      }
-    }
-  }
-
-  & img[src*="coelho"] {
-    position: absolute;
-    top: 2%;
-    left: 36%;
-  }
-
-  & .card-3 {
-    position: static;
-    margin-top: 110px;
-    transform: rotate(8deg);
-    z-index: 2;
 
     &:hover {
-      background-color: var(--shape-hover);
+      z-index: 4;
+      & .card-1 {
+        background-color: var(--shape-hover);
+        transform: translateY(-10px) rotate(-8deg);
+        transition: 0.5s;        
+        border: 1px solid var(--shape-hover);
+      }
+
+      & .tamanho-img {
+        & img:nth-child(1) {
+          transform: rotate(-20deg);
+          transition: 0.5s;
+        }
+    
+        & img:nth-child(2) {
+          transform: rotate(-20deg);
+          transition: 0.5s;
+        }
+      } 
+    }
+  }
+
+/* /CARD 1 */
+  
+
+/* CARD 2 */
+
+  & .card-2-cont {
+    /* border: solid white; */
+    position: relative;
+    z-index: 3;
+    transition: 0.5s;
+
+    & .card-2 {
+      
+      & > div:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        & h3 {
+          color: var(--pink-light);
+        }
+
+        & span:nth-child(2) {
+          font: var(--Body-xs);
+          color: var(--text-body);
+          width: 90px;
+          height: 30px;
+          background-color: var(--shape-stroke);
+          border-radius: 999px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
+      }
+      
+      & button {
+        background-color: var(--pink-dark);
+
+        &:hover {
+          background-color: var(--pink-base);
+        }
+      }
+    }
+    
+    & img[src*="coelho"] {
+    position: absolute;
+    top: -11%;
+    left: 12%;
+    z-index: -1;
     }
 
-    & span:nth-child(3) {
-      margin-bottom: 40px;
+    &:hover {
+      transform: translateY(-10px);
+      transition: 0.5s;
+    
+      & .card-2 {
+          background-color: var(--shape-hover);
+          border: 1px solid var(--shape-hover);
+        }
     }
+  }
+
+/* /CARD 2 */
+
+
+/* CARD 3 */
+
+  & .card-3-cont {
+    /* border: solid lime; */
+    position: relative;
+    z-index: 2;
+    /* margin-top: 110px; */
+    animation: sliddUp-card-3 1s ease forwards;
+
+    transform: translateX(-287px) rotate(-8deg);
+    
+    & .card-3 {
+      transform: rotate(8deg);
+      transition: 0.5s;
+      opacity: 0;
+      animation: aparece 1s ease forwards;
+
+      & span:nth-child(3) {
+        margin-bottom: 40px;
+      }
+    }
+
+    & .estrela-2 {  
+      transform: rotate(150deg);
+      position: absolute;
+      right: -5%;
+      bottom: -10%;
+    }
+
+    & .tamanho-img {
+      & img:nth-child(1) {
+        width: 26px;
+        margin-right: 8px;
+        transition: 0.5s;
+      }
+
+      & img:nth-child(2) {
+        width: 13px;
+        transition: 0.5s;
+      }
+    }
+
+    &:hover {
+      z-index: 4;
+      & .card-3 {
+        background-color: var(--shape-hover);
+        transform: translateY(-10px) rotate(8deg);
+        transition: 0.5s;
+        border: 1px solid var(--shape-hover);
+      }
+
+      & .tamanho-img {
+        & img:nth-child(1) {
+          transform: rotate(-20deg);
+          transition: 0.5s;
+        }
+    
+        & img:nth-child(2) {
+          transform: rotate(-20deg);
+          transition: 0.5s;
+        }
+      }
+    }
+  } 
+
+  /* /CARD 3 */
+
+}
+
+
+@keyframes sliddUp-card-1 {
+  75% {
+    margin-top: 110px;
+    transform: translateX(-3px) rotate(0)
+  }
+
+  100% {
+    margin-top: 110px;
+    transform: translateX(0) rotate(0)
+  }
+}
+
+@keyframes sliddUp-card-3 {
+  75% {
+    margin-top: 110px;
+    transform: translateX(3px) rotate(0)
+  }
+
+  100% {
+    margin-top: 110px;
+    transform: translateX(0) rotate(0)
+  }
+}
+
+
+@keyframes aparece {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 1;
   }
 }
