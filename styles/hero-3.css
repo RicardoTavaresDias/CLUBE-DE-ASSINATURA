@@ -64,9 +64,14 @@
       top: 55px;
       right: -120px;
       transform: rotate(12deg);
+      
       z-index: -1;
-    }
+      
+      
+      animation: Testelivro 1s ease forwards;
+      opacity: 1;
 
+    }
     & img[src*="purple"] {
       width: 172px;
       height: 536px;
@@ -75,6 +80,10 @@
       right: -223px;
       transform: rotate(22deg);
       z-index: -2;
+
+      animation: Testelivro 1s  ease forwards;
+      opacity: 1;
+      
     }
 
     & img[src*="pin"] {
@@ -85,6 +94,7 @@
       left: -135px;
       transform: rotate(-8deg);
       z-index: -3;
+
     }
 
     & div:nth-child(5){
@@ -94,6 +104,8 @@
       position: absolute;
       top: 63px;
       left: -220px;
+
+
     }
 
     & div:nth-child(6){
@@ -103,6 +115,7 @@
       position: absolute;
       bottom: 310px;
       left: -200px;
+
     }
 
     & div:nth-child(7){
@@ -112,6 +125,7 @@
       position: absolute;
       bottom: 70px;
       left: 390px;
+
     }
 
     div {
@@ -134,4 +148,30 @@
       }
     }
   }
+}
+
+
+@keyframes Testelivro {
+ 
+
+0% {
+    opacity: 1;
+    transform: translateX(-80%) translateY(18%);
+    
+
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    
+  }
+
 }
