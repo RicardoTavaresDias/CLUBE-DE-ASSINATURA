@@ -2,17 +2,20 @@
 header {
   border: 0.1px solid;
   height: 100%;
-  
-  margin: 0 auto;
+
   background-image: url(../assets/hero-background.png);
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color:rgba(0, 0, 0, 0.5);
+ 
+  /* animation: teste 3s ease forwards; */
+  
   
 
   & nav {
-    /* border: solid yellow; */
-
+    border: solid yellow;
     max-width: 1280px;
     display: flex;
     justify-content: space-between;
@@ -41,13 +44,12 @@ header {
   }
 
   & .container {
-    /* border: solid blue; */
+    border: solid blue;
 
-    max-width: 1280px;
-    margin: 0 auto;
-
-    & .hero {
-      /* border: solid pink; */
+    & .cabecalho {
+      border: solid pink;
+      max-width: 1280px;
+      margin: 0 auto;
 
       display: flex;
       flex-direction: column;
@@ -57,6 +59,8 @@ header {
       & h1 {
         max-width: 656px;
         margin-bottom: 32px;
+        opacity: 0;
+        animation: texto 3s ease forwards;
       }
 
       & p {
@@ -64,10 +68,33 @@ header {
         color: var(--text-body);
         margin-bottom: 470px;
         max-width: 568px;
+        opacity: 0;
+        animation: texto 2s 0.8s ease forwards;
       }
     }
   }
 }
+
+@keyframes teste {
+  from {
+    /* background: rgb(37,8,37);
+    background: linear-gradient(180deg, rgba(37,8,37,1) 0%, rgba(33,7,33,0) 90%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 100%); */
+    
+    
+  } to {
+    /* background: rgb(37,8,37);
+    transition: ease-in-out; */
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+@keyframes texto {
+  to{
+    opacity: 1;
+  }
+}
+
 
 /* header - mobile { */
 @media (width < 80em) {
