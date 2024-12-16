@@ -1,6 +1,6 @@
 
 section.cartas {
-
+  border: solid lime;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@ section.cartas {
   }
 
   & .cards {
-    /* border: solid red; */
+    border: solid red;
 
     max-width: 1280px;
     width: 100%;
@@ -24,7 +24,7 @@ section.cartas {
   }
 
   & .container-card {
-    /* border: solid blue; */
+    border: solid blue;
 
     width: fit-content;
     height: 500px;

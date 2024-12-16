@@ -1,0 +1,125 @@
+
+section.livros {
+  border: solid yellow;
+  margin: 0 auto;
+
+  & .container-livros {
+    border: solid red;
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+
+    & .header {  
+      border: solid blue; 
+      margin-inline: auto;
+      margin-bottom: 66px; 
+
+      & > div {
+        border: solid white;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 5px;
+
+        & img {
+          max-width: 32px;
+        }
+
+        & h3 {
+          align-self: center;
+          font: var(--Title-sm);
+          color: var(--text-title);
+        }      
+      }
+
+      & p {
+        font: var(--Body-md);
+        color: var(--text-body);
+        text-align: center;
+      }
+    }
+    
+    & .livro {
+      border: solid lime;
+      height: 920px;
+      text-align: center;
+   
+      /* Livro principal colina */
+        & [src*="book"] {
+          width: 467px;
+          height: 617px;
+          margin-top: 134px;
+          position: relative;
+          z-index: 7;
+        }
+
+        /* Card amarelo */
+        & [src*="yellow"] {
+          width: 172px;
+          height: 536px;
+          position: absolute;
+          z-index: 6;
+          transform: translateX(-55px) translateY(-90px) rotate(10deg);
+        }
+
+        /* Card roxo */
+        & [src*="purple"] {
+          width: 172px;
+          height: 536px;
+          position: absolute;
+          z-index: 5;
+          transform: translateX(42px) translateY(10px) rotate(20deg);
+        }
+
+        /* Lata */
+        & [src*="pin"] {
+          width: 222px;
+          height: 254px;
+          position: absolute;
+          z-index: 4;
+          transform: translateX(-606px) translateY(588px) rotate(-8deg);
+        }
+
+        /* Seta - Livro em capa dura */
+        & div:nth-child(5) {
+          position: absolute;
+          z-index: 3;
+          transform: translateX(180px) translateY(-690px);
+
+          & p {
+            font: var(--Body-md);
+            color: var(--text-title);
+            margin-right: 200px;
+            margin-bottom: 23.5px;
+          }
+        }
+
+        /* Seta - Marca páginas temático */
+        & div:nth-child(7) {
+          position: absolute;
+          z-index: 2;
+          transform: translateX(820px) translateY(-100px);
+
+          & p {
+            font: var(--Body-md);
+            color: var(--text-title);
+            margin-right: 130px;
+            margin-top: 17.5px;
+          }
+        }
+
+        /* Seta - Broche exclusivo */
+        & div:nth-child(6) {
+          position: absolute;
+          z-index: 1;
+          transform: translateX(200px) translateY(-300px);
+
+          & p {
+            font: var(--Body-md);
+            color: var(--text-title);
+            margin-bottom: 23px;
+          }
+        }
+      }
+    } 
+  }
