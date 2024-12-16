@@ -1,0 +1,117 @@
+
+.hero {
+  border: solid red;
+  display: flex;
+  justify-content: center;
+
+  & .container-hero {
+    border: solid yellow;
+
+    max-width: 1280px;
+    margin-block: 96px 80px;
+    margin-bottom: 151px;
+    font: var(--Subtitle);
+    color: var(--text-body);
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  & p {
+    border: solid;
+    max-width: 1136px;
+    text-align: center;
+    margin-inline: 32px;
+  }
+
+  & span {
+    color: #e2e7e9b1;
+  }
+
+  & span:nth-child(1) {
+    animation: color-p 1s ease forwards;
+    & strong {
+      animation: color-strong 1s ease forwards;
+    }
+  }
+
+  & span:nth-child(2) {
+    animation: color-p 1s 1.5s ease forwards;
+    & strong {
+      animation: color-strong 1s 1.5s ease forwards;
+    }
+  }
+
+  & span:nth-child(3) {
+    animation: color-p 1s 3s ease forwards;
+    & strong {
+      animation: color-strong 1s 3s ease forwards;
+    }
+  }
+
+  
+  & div {
+    /* border: solid pink; */
+
+    display: flex;
+    justify-content: space-between;
+  
+  }
+
+  & .mystery {
+    align-self: center;
+    width: 88px;
+    height: 88px;
+
+    & img[src*="spellbook"] {
+      width: 80px; 
+      align-self: center;
+      transform: rotate(20deg);  
+      opacity: 0;
+      animation: anime-icon 0.8s ease forwards;
+      
+      &:hover {
+        width: 88px;
+      }
+    }
+  }
+
+
+  & img[src*="planchette"] {
+    width: 80px;
+    transform: rotate(100deg);
+    margin-left: 38.15px;
+    opacity: 0;
+    animation: anime-icon 0.8s 1.5s ease forwards;
+  }
+
+  & img[src*="crystal-ball"] {
+    width: 72px;  
+    transform: rotate(-20deg);
+    opacity: 0;
+    animation: anime-icon 0.8s 3s ease forwards; 
+  }
+}
+
+@keyframes anime-icon {
+  from {
+    transform: scale(0.2);
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes color-p {
+  from {
+    color: #e2e7e9b1;
+  } to {
+    color: var(--text-body);
+  }
+}
+
+@keyframes color-strong {
+   to {
+    color: var(--blue-light);
+  }
+}
