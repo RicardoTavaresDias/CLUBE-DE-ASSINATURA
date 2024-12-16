@@ -1,0 +1,104 @@
+
+footer {
+  height: 415px;
+  background-image: url(../assets/book-trace-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  
+  & .container-footer {
+    border: solid red;
+    width: 1280px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    gap: 544px;
+    padding: 170px 160px 102px 160px;
+
+    & .container-logo {
+      border: solid yellow;
+      width: 100%;
+      display: flex;
+      flex-direction: column;    
+
+      & .social {
+        border: solid white;
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        & a {
+          color: var(--text-body);
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50px;
+          
+          &:hover {
+            background-color: var(--shape-stroke);
+          }
+        }
+      }
+    }
+
+
+    & .container-links {
+      /* border: solid pink; */
+      display: flex;
+      gap: 56px;
+      & .conteudo {
+        /* border: solid white; */
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: max-content;
+
+        & span {
+          color: var(--text-body);
+          font: var(--Title-xs);
+          margin-bottom: 20px;
+        }
+
+        & a {
+          text-decoration: none;
+          color: var(--blue-light);
+          font: var(--Link);
+
+          &:hover {
+            color: var(--text-body);
+          }
+        }
+        
+      }
+    
+      & .ajuda {
+        /* border: solid white; */
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: max-content;
+
+        & span {
+          color: var(--text-body);
+          font: var(--Title-xs);
+          margin-bottom: 20px;
+        }
+
+        & a {
+          text-decoration: none;
+          color: var(--blue-light);
+          font: var(--Link);
+
+          &:hover {
+            color: var(--text-body);
+          }
+        }
+      }
+      
+    }
+
+  }
+}
