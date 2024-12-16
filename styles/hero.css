@@ -67,7 +67,7 @@
       align-self: center;
       transform: rotate(20deg);  
       opacity: 0;
-      animation: anime-icon 0.6s ease forwards;
+      animation: anime-icon 1s ease forwards;
       
       &:hover {
         width: 88px;

@@ -2,18 +2,8 @@
 header {
   border: 0.1px solid;
   height: 100%;
-
-  background-image: url(../assets/hero-background.png);
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   background-color:rgba(0, 0, 0, 0.5);
  
-  /* animation: teste 3s ease forwards; */
-  
-  
-
   & nav {
     border: solid yellow;
     max-width: 1280px;
@@ -75,19 +65,24 @@ header {
   }
 }
 
+.background-hero {
+  animation: teste 3s ease forwards;
+ }
+
 @keyframes teste {
-  from {
-    /* background: rgb(37,8,37);
-    background: linear-gradient(180deg, rgba(37,8,37,1) 0%, rgba(33,7,33,0) 90%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 100%); */
+  0% {
+    background: linear-gradient(180deg, rgba(37,8,37,1) 0%, rgba(33,7,33,1) 90%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 100%);
     
-    
-  } to {
-    /* background: rgb(37,8,37);
-    transition: ease-in-out; */
-    background-color:rgba(0, 0, 0, 0.5);
+  } 50% {
+    background: linear-gradient(180deg, rgba(37,8,37,1) 0%, rgba(33,7,33,0) 90%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 100%);
+   
+  } 100% {
+    background-image: url(../assets/hero-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
-
 
 @keyframes texto {
   to{
