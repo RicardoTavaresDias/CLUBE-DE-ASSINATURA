@@ -306,15 +306,15 @@ section.cartas {
 }
 
 .animacao-card-1 {
-  animation: sliddUp-card-1 1s 400ms ease forwards;
+  animation: sliddUp-card-1 1s 200ms ease forwards;
 }
 
 .animacao-card-3 {
-  animation: sliddUp-card-3 1s 400ms ease forwards;
+  animation: sliddUp-card-3 1s 200ms ease forwards;
 }
 
 .show {
-  animation: aparece 1s 400ms ease forwards;
+  animation: aparece 1s 200ms ease forwards;
 }
 
 

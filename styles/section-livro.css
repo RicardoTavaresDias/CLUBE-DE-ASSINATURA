@@ -2,7 +2,6 @@
 section.livros {
   /* border: solid yellow; */
   margin: 0 auto;
-  padding-bottom: 147px;
 
   & .container-livros {
     /* border: solid red; */
