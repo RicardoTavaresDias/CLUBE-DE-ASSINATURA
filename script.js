@@ -5,17 +5,40 @@ const myHero = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if(entry.isIntersecting){
 
+      document.querySelector('.p').classList.add('color-p')
+      document.querySelector('.p-1s').classList.add('color-p-1s')
+      document.querySelector('.p-2s').classList.add('color-p-2s')
+
+      document.querySelector('.strong').classList.add('color-strong')
+      document.querySelector('.strong-1s').classList.add('color-strong-1s')
+      document.querySelector('.strong-2s').classList.add('color-strong-2s')
+
+      document.querySelector('.icon').classList.add('anime-icon')
+      document.querySelector('.icon-1s').classList.add('anime-icon-1s')
+      document.querySelector('.icon-2s').classList.add('anime-icon-2s')
 
       console.log('on')
       
     }else {
+
+      // document.querySelector('.p').classList.remove('color-p')
+      // document.querySelector('.p-1s').classList.remove('color-p-1s')
+      // document.querySelector('.p-2s').classList.remove('color-p-2s')
+
+      // document.querySelector('.strong').classList.remove('color-strong')
+      // document.querySelector('.strong-1s').classList.remove('color-strong-1s')
+      // document.querySelector('.strong-2s').classList.remove('color-strong-2s')
+
+      // document.querySelector('.icon').classList.remove('anime-icon')
+      // document.querySelector('.icon-1s').classList.remove('anime-icon-1s')
+      // document.querySelector('.icon-2s').classList.remove('anime-icon-2s')
       
       console.log('off')
     }
   })
 })
 
-const sectiohero = document.querySelectorAll('.strong-1')
+const sectiohero = document.querySelectorAll('.mystery')
 sectiohero.forEach((element) => myHero.observe(element))
 
 

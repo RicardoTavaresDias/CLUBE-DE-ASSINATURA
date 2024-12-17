@@ -29,23 +29,23 @@
   }
 
   & span:nth-child(1) {
-    animation: color-p 1s ease forwards;
+    /* animation: color-p 1s ease forwards; */
     & strong {
-      animation: color-strong 1s ease forwards;
+      /* animation: color-strong 1s ease forwards; */
     }
   }
 
   & span:nth-child(2) {
-    animation: color-p 1s 1s ease forwards;
+    /* animation: color-p 1s 1s ease forwards; */
     & strong {
-      animation: color-strong 1s 1s ease forwards;
+      /* animation: color-strong 1s 1s ease forwards; */
     }
   }
 
   & span:nth-child(3) {
-    animation: color-p 1s 2s ease forwards;
+    /* animation: color-p 1s 2s ease forwards; */
     & strong {
-      animation: color-strong 1s 2s ease forwards;
+      /* animation: color-strong 1s 2s ease forwards; */
     }
   }
   
@@ -67,7 +67,7 @@
       align-self: center;
       transform: rotate(20deg);  
       opacity: 0;
-      animation: anime-icon 1s ease forwards;
+      /* animation: anime-icon 1s ease forwards; */
       
       &:hover {
         width: 88px;
@@ -80,16 +80,50 @@
     transform: rotate(100deg);
     margin-left: 38.15px;
     opacity: 0;
-    animation: anime-icon 0.6s 1s ease forwards;
+    /* animation: anime-icon 0.6s 1s ease forwards; */
   }
 
   & img[src*="crystal-ball"] {
     width: 72px;  
     transform: rotate(-20deg);
     opacity: 0;
-    animation: anime-icon 0.6s 2s ease forwards; 
+    /* animation: anime-icon 0.6s 2s ease forwards;  */
   }
 }
+
+.color-p {
+  animation: color-p 1s ease forwards;
+}
+.color-p-1s {
+  animation: color-p 1s 1s ease forwards;
+}
+.color-p-2s {
+  animation: color-p 1s 2s ease forwards;
+}
+
+
+
+.color-strong {
+  animation: color-strong 1s ease forwards;
+}
+.color-strong-1s {
+  animation: color-strong 1s 1s ease forwards;
+}
+.color-strong-2s {
+  animation: color-strong 1s 2s ease forwards;
+}
+
+.anime-icon {
+  animation: anime-icon 1s ease forwards;
+}
+.anime-icon-1s {
+  animation: anime-icon 0.6s 1s ease forwards;
+}
+.anime-icon-2s {
+  animation: anime-icon 0.6s 2s ease forwards;
+}
+
+
 
 @keyframes anime-icon {
   from {
