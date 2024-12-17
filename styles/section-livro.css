@@ -61,6 +61,7 @@ section.livros {
           z-index: 6;
           /* transform: translateX(-55px) translateY(-90px) rotate(10deg); */
           /* animation: yellow 1.3s ease forwards; */
+          opacity: 0;
         }
 
         /* Card roxo */
@@ -71,6 +72,7 @@ section.livros {
           z-index: 5;
           /* transform: translateX(42px) translateY(10px) rotate(20deg); */
           /* animation: purple 1.5s ease forwards; */
+          opacity: 0;
         }
 
         /* Lata */
@@ -81,6 +83,7 @@ section.livros {
           z-index: 4;
           /* transform: translateX(-606px) translateY(588px) rotate(-8deg); */
           /* animation: pin 1.5s ease forwards; */
+          opacity: 0;
         }
 
         /* Seta - Livro em capa dura */
@@ -89,6 +92,7 @@ section.livros {
           z-index: 3;
           /* transform: translateX(180px) translateY(-690px); */
           /* animation: seta-capa 1.5s ease forwards; */
+          opacity: 0;
 
           & p {
             font: var(--Body-md);
@@ -104,6 +108,7 @@ section.livros {
           z-index: 2;
           /* transform: translateX(820px) translateY(-100px); */
           /* animation: seta-marca 1.5s ease forwards; */
+          opacity: 0;
 
           & p {
             font: var(--Body-md);
@@ -119,6 +124,7 @@ section.livros {
           z-index: 1;
           /* transform: translateX(200px) translateY(-300px); */
           /* animation: seta-broche 1.5s ease forwards; */
+          opacity: 0;
 
           & p {
             font: var(--Body-md);
@@ -136,11 +142,13 @@ section.livros {
 
   @keyframes yellow {
     0% {
+      opacity: 1;
       transform: translateX(-200px) translateY(20px) rotate(0deg);
     } 60% {
       transform: translateX(-55px) translateY(-93px) rotate(10deg);
     } 100% {
       transform: translateX(-55px) translateY(-90px) rotate(10deg);
+      opacity: 1;
     }
   }
 
@@ -150,11 +158,13 @@ section.livros {
 
     @keyframes purple {
       0% {
+        opacity: 1;
         transform: translateX(-250px) translateY(15px) rotate(0deg);
       } 50% {
         transform: translateX(44px) translateY(7px) rotate(20.5deg);
       } 100% {
         transform: translateX(42px) translateY(10px) rotate(20deg);
+        opacity: 1;
       }
     }
 
@@ -164,11 +174,13 @@ section.livros {
 
     @keyframes pin {
       0% {
+        opacity: 1;
         transform: translateX(-436px) translateY(450px) rotate(0deg);
       } 60% {
         transform: translateX(-608px) translateY(590px) rotate(-8deg);
       } 100% {
         transform: translateX(-606px) translateY(588px) rotate(-8deg);
+        opacity: 1;
       }
     }
   
@@ -178,11 +190,13 @@ section.livros {
 
     @keyframes seta-marca {
       0% {
+        opacity: 1;
         transform: translateX(610px) translateY(-350px) scale(0.5);
       } 60% {
         transform: translateX(805px) translateY(-100px);
       } 100% {
         transform: translateX(800px) translateY(-100px);
+        opacity: 1;
       }
     }
 
@@ -192,11 +206,13 @@ section.livros {
 
     @keyframes seta-broche {
       0% {
+        opacity: 1;
         transform: translateX(430px) translateY(-430px) scale(0.5);
       } 60% {
         transform: translateX(197px) translateY(-300px);
       } 100% {
         transform: translateX(200px) translateY(-300px);
+        opacity: 1;
       }
     }
 
@@ -206,10 +222,12 @@ section.livros {
 
     @keyframes seta-capa {
       0% {
+        opacity: 1;
         transform: translateX(390px) translateY(-550px) scale(0.5);
       } 60% {
         transform: translateX(180px) translateY(-696px);
       } 100% {
         transform: translateX(180px) translateY(-693px);
+        opacity: 1;
       }
     }
