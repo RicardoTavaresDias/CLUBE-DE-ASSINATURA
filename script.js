@@ -64,6 +64,7 @@ const myCartas = new IntersectionObserver((entries) => {
       // entry.target.classList.remove('show')
       // document.querySelector('.anime-1').classList.remove('animacao-card-1')
       // document.querySelector('.anime-3').classList.remove('animacao-card-3')
+      
 
     }
   })
