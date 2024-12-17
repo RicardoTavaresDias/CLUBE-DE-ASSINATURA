@@ -21,17 +21,17 @@ const myHero = new IntersectionObserver((entries) => {
       
     }else {
 
-      // document.querySelector('.p').classList.remove('color-p')
-      // document.querySelector('.p-1s').classList.remove('color-p-1s')
-      // document.querySelector('.p-2s').classList.remove('color-p-2s')
+      document.querySelector('.p').classList.remove('color-p')
+      document.querySelector('.p-1s').classList.remove('color-p-1s')
+      document.querySelector('.p-2s').classList.remove('color-p-2s')
 
-      // document.querySelector('.strong').classList.remove('color-strong')
-      // document.querySelector('.strong-1s').classList.remove('color-strong-1s')
-      // document.querySelector('.strong-2s').classList.remove('color-strong-2s')
+      document.querySelector('.strong').classList.remove('color-strong')
+      document.querySelector('.strong-1s').classList.remove('color-strong-1s')
+      document.querySelector('.strong-2s').classList.remove('color-strong-2s')
 
-      // document.querySelector('.icon').classList.remove('anime-icon')
-      // document.querySelector('.icon-1s').classList.remove('anime-icon-1s')
-      // document.querySelector('.icon-2s').classList.remove('anime-icon-2s')
+      document.querySelector('.icon').classList.remove('anime-icon')
+      document.querySelector('.icon-1s').classList.remove('anime-icon-1s')
+      document.querySelector('.icon-2s').classList.remove('anime-icon-2s')
       
       console.log('off')
     }
