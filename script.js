@@ -34,12 +34,12 @@ const myLivro = new IntersectionObserver((entries) => {
       
     }else {
 
-      document.querySelector('.off-amarelo').classList.remove('amarelo')
-      document.querySelector('.off-roxo').classList.remove('roxo')
-      document.querySelector('.off-lata').classList.remove('lata')
-      document.querySelector('.off-seta-capa').classList.remove('seta-capa')
-      document.querySelector('.off-seta-broche').classList.remove('seta-broche')
-      document.querySelector('.off-seta-marca').classList.remove('seta-marca')
+      // document.querySelector('.off-amarelo').classList.remove('amarelo')
+      // document.querySelector('.off-roxo').classList.remove('roxo')
+      // document.querySelector('.off-lata').classList.remove('lata')
+      // document.querySelector('.off-seta-capa').classList.remove('seta-capa')
+      // document.querySelector('.off-seta-broche').classList.remove('seta-broche')
+      // document.querySelector('.off-seta-marca').classList.remove('seta-marca')
 
     }
   })
@@ -61,9 +61,9 @@ const myCartas = new IntersectionObserver((entries) => {
 
     }else {
 
-      entry.target.classList.remove('show')
-      document.querySelector('.anime-1').classList.remove('animacao-card-1')
-      document.querySelector('.anime-3').classList.remove('animacao-card-3')
+      // entry.target.classList.remove('show')
+      // document.querySelector('.anime-1').classList.remove('animacao-card-1')
+      // document.querySelector('.anime-3').classList.remove('animacao-card-3')
 
     }
   })
