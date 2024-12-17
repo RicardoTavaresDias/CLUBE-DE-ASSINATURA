@@ -60,7 +60,7 @@ section.livros {
           position: absolute;
           z-index: 6;
           /* transform: translateX(-55px) translateY(-90px) rotate(10deg); */
-          animation: yellow 1.3s ease forwards;
+          /* animation: yellow 1.3s ease forwards; */
         }
 
         /* Card roxo */
@@ -70,7 +70,7 @@ section.livros {
           position: absolute;
           z-index: 5;
           /* transform: translateX(42px) translateY(10px) rotate(20deg); */
-          animation: purple 1.5s ease forwards;
+          /* animation: purple 1.5s ease forwards; */
         }
 
         /* Lata */
@@ -80,7 +80,7 @@ section.livros {
           position: absolute;
           z-index: 4;
           /* transform: translateX(-606px) translateY(588px) rotate(-8deg); */
-          animation: pin 1.5s ease forwards;
+          /* animation: pin 1.5s ease forwards; */
         }
 
         /* Seta - Livro em capa dura */
@@ -88,7 +88,7 @@ section.livros {
           position: absolute;
           z-index: 3;
           /* transform: translateX(180px) translateY(-690px); */
-          animation: seta-capa 1.5s ease forwards;
+          /* animation: seta-capa 1.5s ease forwards; */
 
           & p {
             font: var(--Body-md);
@@ -103,7 +103,7 @@ section.livros {
           position: absolute;
           z-index: 2;
           /* transform: translateX(820px) translateY(-100px); */
-          animation: seta-marca 1.5s ease forwards;
+          /* animation: seta-marca 1.5s ease forwards; */
 
           & p {
             font: var(--Body-md);
@@ -118,7 +118,7 @@ section.livros {
           position: absolute;
           z-index: 1;
           /* transform: translateX(200px) translateY(-300px); */
-          animation: seta-broche 1.5s ease forwards;
+          /* animation: seta-broche 1.5s ease forwards; */
 
           & p {
             font: var(--Body-md);
@@ -128,6 +128,10 @@ section.livros {
         }
       }
     } 
+  }
+
+  .amarelo {
+    animation: yellow 1.3s ease forwards;  
   }
 
   @keyframes yellow {
@@ -140,6 +144,10 @@ section.livros {
     }
   }
 
+  .roxo {
+    animation: purple 1.5s ease forwards; 
+  }
+
     @keyframes purple {
       0% {
         transform: translateX(-250px) translateY(15px) rotate(0deg);
@@ -148,6 +156,10 @@ section.livros {
       } 100% {
         transform: translateX(42px) translateY(10px) rotate(20deg);
       }
+    }
+
+    .lata {
+      animation: pin 1.5s ease forwards;
     }
 
     @keyframes pin {
@@ -160,6 +172,10 @@ section.livros {
       }
     }
   
+    .seta-marca {
+      animation: seta-marca 1.5s ease forwards;
+    }
+
     @keyframes seta-marca {
       0% {
         transform: translateX(610px) translateY(-350px) scale(0.5);
@@ -170,6 +186,10 @@ section.livros {
       }
     }
 
+    .seta-broche {
+      animation: seta-broche 1.5s ease forwards;
+    }
+
     @keyframes seta-broche {
       0% {
         transform: translateX(430px) translateY(-430px) scale(0.5);
@@ -178,6 +198,10 @@ section.livros {
       } 100% {
         transform: translateX(200px) translateY(-300px);
       }
+    }
+
+    .seta-capa {
+      animation: seta-capa 1.5s ease forwards;
     }
 
     @keyframes seta-capa {
