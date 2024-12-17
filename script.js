@@ -1,4 +1,24 @@
 
+// Sectio hero
+
+const myHero = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting){
+
+
+      console.log('on')
+      
+    }else {
+      
+      console.log('off')
+    }
+  })
+})
+
+const sectiohero = document.querySelectorAll('.strong-1')
+sectiohero.forEach((element) => myHero.observe(element))
+
+
 //section Livro
 
 const myLivro = new IntersectionObserver((entries) => {
