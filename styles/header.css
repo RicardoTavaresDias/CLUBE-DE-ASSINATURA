@@ -13,7 +13,7 @@ header {
     margin: 56px auto 164px auto;
     background-image: url(../assets/icons/logo-horizontal.svg);
     background-repeat: no-repeat;
-    background-size: top cover;
+    background-size: contain;
     
 
     & > button {
@@ -79,7 +79,7 @@ header {
   } 100% {
     background-image: url(../assets/hero-background.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
   }
 }
